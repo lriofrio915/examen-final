@@ -1,0 +1,77 @@
+{
+	"info": {
+		"_postman_id": "d2707ab7-b5e4-4d14-a2a0-9c7ee8f33e0d",
+		"name": "examen-final",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14981660"
+	},
+	"item": [
+		{
+			"name": "Estudiante",
+			"item": [
+				{
+					"name": "Create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 123,\r\n    \"nombre\": \"Pepito\",\r\n    \"apellido\": \"Cadena\",\r\n    \"fechaNacimiento\": \"1991-05-28\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/estudiantes",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"estudiantes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/estudiantes/id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"estudiantes",
+								"id"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{url}}/estudiantes/id",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"estudiantes",
+								"id"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
